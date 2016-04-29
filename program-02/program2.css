@@ -1,0 +1,40 @@
+h2 {
+    text-align: center;
+}
+.requirement1, .requirement2, .requirement3, .requirement4,
+.requirement5, .requirement6, .requirement7, .requirement8,
+.requirement9, .requirement10, .requirement11, .requirement12,
+.requirement13,.requirement14, .requirement15, .requirement16,
+.requirement17, .requirement18, .requirement19, .requirement20,
+.requirement21, .requirement22, .requirement23, .requirement24{
+
+    /*text-align: center;*/
+    padding-top: 100px;
+}
+.req_textarea{
+
+    width: 45%;
+    display: inline-block;
+}
+.topspace{
+    padding-top: 50px;
+    display: inline-block;
+}
+.results{
+    padding-top: 20px;
+    color: darkred;
+}
+
+table {
+    border: 1px solid black;
+    text-align: center;
+    width: 400px;
+}
+td, tr, th{
+
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+

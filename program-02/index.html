@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Program 2: Tracy Thompson</title>
+    <link href="program2.css" rel="stylesheet">
+    <script type="text/javascript" src="program2.js"></script>
+
+</head>
+<body>
+
+<h1 style="text-align: center;">Welcome to Program 02</h1>
+
+<!--requirement 1-->
+
+<div class="requirement1">
+    <h2 style="padding-bottom: 30px">Requirement #1</h2>
+    <p style="text-align: left">
+        To concatenate two paragraphs, enter text in both boxes and click "Concatenate":
+    </p>
+    <div class="req_textarea">
+        <p>paragraph 1:</p>
+        <textarea rows="5" cols="60" wrap="hard" id="ptext1"></textarea>
+    </div>
+    <div class="req1_textarea">
+        <p>paragraph 2:</p>
+        <textarea rows="5" cols="60" wrap="hard" id="ptext2"></textarea>
+    </div><br>
+    <button onclick="req1_concatenate()">Concatenate</button>
+    <p id="req1_paragr"></p>
+<hr>
+</div>
+<!--End requirement 1-->
+
+
+<!--requirement 2-->
+<div class="requirement2" >
+    <h2>Requirement #2</h2>
+    <button onclick="req2_local_storage()">Store Paragraphs</button>
+    <button onclick="req2_local_retreive1()">Retreive Paragraph #1</button>
+    <button onclick="req2_local_retreive2()">Retreive Paragraph #2</button>
+    <button onclick="req2_local_remove()">Both Gone from now on</button>
+    <div id="req2_text"></div>
+    <hr>
+</div>
+
+<!--End requirement 2-->
+
+
+
+<!--requirement 3-->
+
+<div class="requirement3" >
+    <h2>Requirement #3</h2>
+    <div class="req_textarea">
+        <p>Text For Textarea:</p>
+        <textarea rows="5" cols="60" wrap="hard" id="ptext1forreq3"></textarea>
+    </div>
+    <div class="req_textarea">
+        Search (up to 50 Characters & case sensitive):
+       <input type="text" id="textboxforreq3" maxlength="50">&nbsp;
+        <button onclick="req3_findit()">Search</button>
+    </div>
+    <p id="isitthere" style="font-size: 20px; color: blue"></p>
+   <hr>
+</div>
+<!--End requirement 3-->
+
+
+
+<!--requirement 4-->
+<div class="requirement4" >
+    <h2>Requirement #4</h2>
+    <div class="topspace">
+        Enter String: <input type="text" id="textboxforreq4">
+        1st Number: <input type="text" id="firstnumber" >
+        2nd Number: <input type="text" id="secondnumber" ><br><br>
+
+        <button onclick="req4_slice()" id="sliceit">Slice</button>
+        <button onclick="req4_substring()">Substring</button>
+        <button onclick="req4_substrops()">Substring Ops</button>
+    </div>
+    <div id="result4" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 4-->
+
+
+
+<!--requirement 5-->
+<div class="requirement5" >
+    <h2>Requirement #5</h2>
+    <div class="topspace">
+        String 1: <input type="text" id="string5">
+        String 2: <input type="text" id="replacementstring5" >
+        Sentence using String 1: <input type="text" id="sentence" ><br><br>
+        <button onclick="req5_replace()" id="replaceit">Replace</button>
+    </div>
+    <div id="result5" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 5-->
+
+
+
+<!--requirement 6-->
+<div class="requirement6" >
+    <h2>Requirement #6</h2>
+    <div class="topspace">
+        To convert a string in to an array,<br>
+        enter a two or more flower types<br>
+        Separate them with the <strong>'&'</strong> symbol: <input type="text" id="string6">
+        <button onclick="req6_convertarray()" id="convertit">Convert</button>
+    </div>
+    <div id="result6" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 6-->
+
+
+
+<!--requirement 7-->
+<div class="requirement7" >
+    <h2>Requirement #7</h2>
+    <div class="topspace">
+        <div class="req_textarea">
+        Click the panda bear as many<br>
+        times as you like. When tired,<br>
+        Click "Tired" for total number of clicks. &nbsp; &nbsp;
+            <button onclick="req7_sessionclicks()" id="storedit">Tired</button> </div>
+        <div class="req_textarea"><img src="images2/panda-151818_960_720.png" style="height: 30%; width: 30%" id="panda7"
+                onclick="req7_clickCounter()"></div>
+    <div>
+        <p id="result7" class="results"></p>
+        <p>To reset, close browser or window.</p>
+        <br><br></div>
+    <hr>
+    </div>
+</div>
+<!--End requirement 7-->
+
+
+
+<!--requirement 8-->
+<div class="requirement8" >
+    <h2>Requirement #8</h2>
+    <p class="topspace"></p>
+        1st Number: <input type="text" id="firstnumber8">
+        2nd "Number": <input type="text" id="nada8" >
+        <button onclick="req8_division()">Divide</button>
+        <p>Funky Division:</p>
+        <p>Dividing first number by second. But try a zero as the second number<br>
+        And then try a string for the second number.</p>
+    <div id="result8" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 8-->
+
+
+
+<!--requirement 9-->
+<div class="requirement9" >
+    <h2>Requirement #9</h2>
+    <p class="topspace"></p>
+<p>click button to populate table with examples of Number(), parseInt(), and parseFloat() data: </p></div><button onclick="req9_table()">Populate</button>
+   <div id = "divreq9" style="padding-top: 20px"></div><br><br>
+<hr>
+
+<!--End requirement 9-->
+
+
+
+<!--requirement 10-->
+<div class="requirement10" >
+    <h2>Requirement #10</h2>
+    <div class="topspace">
+        <p>click button to get three random numbers: <button onclick="req10_numbers()">Click</button> </p>
+    </div>
+    <div>
+    <p id="result10" class="results"></p>
+    </div>
+    <hr>
+</div>
+<!--End requirement 10-->
+
+
+
+<!--requirement 11-->
+<div class="requirement11" >
+    <h2>Requirement #11</h2>
+    <p class="topspace"></p>
+        Base Number: <input type="text" id="basenumber">
+        Exponent Number: <input type="text" id="exponent11" >
+        <button onclick="req11_exponentation()">Calculate</button>
+    <p>Calculating the exponential operation.</p>
+    <div id="result11" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 11-->
+
+
+
+<!--requirement 12-->
+<div class="requirement12" >
+    <h2>Requirement #12</h2>
+    <p class="topspace">
+       Click Button for date:  <button onclick="req12_date()">Date</button>
+    <p>Setting & Displaying date 4 different ways</p>
+    <div id="result12" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 12-->
+
+
+
+<!--requirement 13-->
+<div class="requirement13" >
+    <h2>Requirement #13</h2>
+        <p class="topspace"></p>
+    <p>click button for today's date and to populate table with Date methods: <button onclick="req13_table()">Populate</button> </p>
+    <p id="results13"></p>
+</div>
+<div>
+    <table id ="req13_table">
+        <tr>
+            <th></th>
+            <th>Day</th>
+            <th>Month</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <th>Get it</th>
+            <td id="data00"></td>
+            <td id="data01"></td>
+            <td id="data02"></td>
+        </tr>
+        <tr>
+            <th>Set it</th>
+            <td id="data10"></td>
+            <td id="data11"></td>
+            <td id="data12"></td>
+        </tr>
+    </table>
+<br><br>
+    <hr>
+</div>
+<!--End requirement 13-->
+
+
+
+<!--requirement 14-->
+<div class="requirement14" >
+    <h2>Requirement #14</h2>
+    <div class="topspace">
+        String to array. Enter 7 planets.<br>
+        Separate them with a <strong>comma</strong><br>
+        Select "Convert" to change to array.<br>
+        Then select "Join" to join to a string: <input type="text" id="planets14">
+        <button onclick="req14_planetArray()" id="14convertit">Convert</button> &nbsp;
+        <button onclick="req14_planetArrayJoin()">Join</button>
+    </div>
+    <div id="result14" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 14-->
+
+
+
+<!--requirement 15-->
+<div class="requirement15" >
+    <h2>Requirement #15</h2>
+    <div class="topspace">
+        Remove last 2 elements from planetsArray: <!---->
+        <button onclick="req15_planetRemove()" id="15removeit">Remove</button> &nbsp;
+        Add two new items: <input type="text" id="firstadd15">&nbsp;<input type="text" id="secondadd15"><button onclick="req15_addon()">Add</button>
+    </div>
+    <div id="result15" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 15-->
+
+
+
+<!--requirement 16-->
+<div class="requirement16" >
+    <h2>Requirement #16</h2>
+    <div class="topspace">
+        Remove first element from planetsArray:
+        <button onclick="req16_planetRemove()" id="16removeit">Remove</button> &nbsp;
+        Add a new items to beginning: <input type="text" id="firstadd16">&nbsp;<button onclick="req16_addon()">Add</button>
+    </div>
+    <div id="result16" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 16-->
+
+
+
+<!--requirement 17-->
+<div class="requirement17" >
+    <h2>Requirement #17</h2>
+    <div class="topspace">
+        Add a new element to third position: <input type="text" id="thirdadd17">&nbsp;<button onclick="req17_addon()">Add</button> &nbsp;
+        Sort the new array in alphabetical order:&nbsp;<button onclick="req17_sortit()" id="17sort">Sort</button> &nbsp;
+    </div>
+    <div id="result17" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 17-->
+
+
+
+<!--requirement 18-->
+<div class="requirement18" >
+    <h2>Requirement #18</h2>
+    <div class="topspace">
+        Create new array from the first for elements of planetsArray:
+        <button onclick="req18_new4ElementArray()" id="18OldAndNew">Create</button> &nbsp;
+    </div>
+    <div id="result18" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 18-->
+
+
+
+<!--requirement 19-->
+<div class="requirement19" >
+    <h2>Requirement #19</h2>
+    <p class="topspace">
+        Enter two numbers and compare
+    </p>
+    First Number: <input type="text" id="req19_firstnumber">
+    Second Number: <input type="text" id="req19_secondnumber" >
+    <button onclick="req19_compare()">Compare</button>
+    <div id="result19" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 19-->
+
+
+
+<!--requirement 20-->
+<div class="requirement20" >
+    <h2>Requirement #20</h2>
+    <p class="topspace">
+        Enter a number and submit: <input type="text" id="req20_number">&nbsp;
+        <button onclick="req20_logic()">Enter</button></p>
+    <div id="result20" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 20-->
+
+
+
+<!--requirement 21-->
+<div class="requirement21" >
+    <h2>Requirement #21</h2>
+    <p class="topspace">
+        Enter a type of metal and click "Guess": <input type="text" id="req21_guesses">&nbsp;
+        <button onclick="req21_logic()">Guess</button></p>
+    <div id="result21" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 21-->
+
+
+
+<!--requirement 22-->
+<div class="requirement22" >
+    <h2>Requirement #22</h2>
+    <p class="topspace">
+        Enter the name of an actor and click "Guess": <input type="text" id="req22_guesses">&nbsp;
+        <button onclick="req22_logic()">Guess</button></p>
+    <div id="result22" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 22-->
+
+
+
+<!--requirement 23-->
+<div class="requirement23" >
+    <h2>Requirement #23</h2>
+    <p class="topspace">
+        Enter the name of an animal and click "Guess": <input type="text" id="req23_guesses">&nbsp;
+        <button onclick="req23_logic()">Guess</button></p>
+    <div id="result23" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 23-->
+
+
+
+<!--requirement 24-->
+<div class="requirement24" >
+    <h2>Requirement #24</h2>
+    <div class="topspace">
+     <p>  Check to see which planets are in the planetArray
+        <button onclick="req24_morePlanetArray()" id="24planets">Retrieve</button> </p>
+        <p> The first three planets in the planetArray <button onclick="req24_whileloop()">Retrieve</button></p>
+        <p> The last planet in the planetArray <button onclick="req24_dowhileloop()">Retrieve</button></p>
+    </div>
+    <div id="result24" class="results"><br><br></div>
+    <hr>
+</div>
+<!--End requirement 24-->
+<p>
+    <a href="../index.html">return main page</a></p>
+
+
+</body>
+</html>

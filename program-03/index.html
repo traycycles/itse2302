@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thompson: Program 3</title>
+    <link href="program3.css" rel="stylesheet">
+    <script type="text/javascript" src="program3.js"></script>
+
+</head>
+<body>
+
+<h1 style="text-align: center; padding-bottom: 100px">Program 3</h1>
+
+<!--requirement 1-->
+<div class="requirement1">
+    <h2>Requirement #1</h2>
+    <div class="topspace">
+        Enter two strings. <br>
+            Select "Regex" to search.&nbsp;&nbsp;
+        String 1: <input type="text" id="string1">
+        String to search in 1st (NOT case sensitive): <input type="text" id="searchString1" >
+            <button onclick="req1_regex()">Regex</button></div>
+    <div id="result1" class=" results"></div>
+    <hr>
+</div>
+<!--End requirement 1-->
+
+
+
+<!--requirement 2-->
+<div class="requirement2">
+    <h2>Requirement #2</h2>
+    <div style="text-align: center; padding-top: 50px">
+        <p id = "initialString2">I love watching tennis, watching football and watching card games.</p>
+        </div>
+    <div class="topspace">
+        Replace: <input type="text" id="searchString2"> &nbsp;
+        With: <input type="text" id="replacementString2" >
+        <button onclick="req2_regexReplace()">Replace</button></div>
+    <div id="result2" class=" results"></div>
+    <hr>
+</div>
+<!--End requirement 2-->
+
+<!--requirement 3 -->
+<div class="requirement3">
+    <h2>Requirement #3</h2>
+
+    <div class="topspace">
+        Guess a number between a certain range: <input type="text" id="num3">
+        <button onclick="req3_catchThrow3()">Guess</button></div>
+    <div id="result3" class="results"></div>
+    <hr>
+</div>
+<!--End requirement 3-->
+
+
+
+<!--requirement 4 -->
+<div class="requirement4">
+    <h2>Requirement #4</h2>
+
+    <div class="topspace">
+
+        <p>Demonstrating the use of console.log method and debugger.<br/>
+            First Click button to see result. Refresh page.<br/>
+            Then turn on console/debugger and then click button to see debugger in action.
+            <button onclick="req4_debugConsole()">Click</button></p>
+        <div id="result4" class="results"></div>
+    </div>
+    <hr>
+</div>
+    <!--End requirement 4-->
+
+
+
+
+    <!--Requirement 5-->
+    <div class="requirement5">
+        <h2>Requirement #5</h2>
+        <div class="topspace">
+            <p>Primary Components of the Javascript Style Guide:</p>
+            <ol>
+                <li><a href="javascript:req5_openit1('click1')">Variable Names</a></li>
+                <li><a href="javascript:req5_openit1('click2')">Spaces Around Operators</a></li>
+                <li><a href="javascript:req5_openit1('click3')">Code Indentation</a></li>
+                <li><a href="javascript:req5_openit1('click4')">Statement Rules</a></li>
+                <li><a href="javascript:req5_openit1('click5')">Object Rules</a></li>
+                <li><a href="javascript:req5_openit1('click6')">Line Length < 80 Characters</a></li>
+                <li><a href="javascript:req5_openit1('click7')">Naming Conventions</a></li>
+                <li><a href="javascript:req5_openit1('click8')">Loading Javascript in HTML</a></li>
+                <li><a href="javascript:req5_openit1('click9')">Accessing HTML Elements</a></li>
+                <li><a href="javascript:req5_openit1('click10')">File Extensions</a></li>
+                <li><a href="javascript:req5_openit1('click11')">Use Lower Case File Names</a></li>
+                <li><a href="javascript:req5_openit1('click12')">Performance</a></li>
+            </ol>
+        </div>
+    <hr>
+    </div>
+<!--end requirement #5-->
+
+
+
+<!--Requirement 6-->
+<div class="requirement6">
+    <h2>Requirement #6</h2>
+    <div class="topspace">
+
+        <p>Demonstrating the HTML Application Cache API. <a href="test-appcache.html">Click here</a> to go to page.
+        </div>
+    <hr>
+    </div>
+<!-- end requirement 6-->
+
+
+<!--Requirement 7-->
+<div class="requirement7">
+    <h2>Requirement #7</h2>
+    <div class="topspace">
+        <p>Primary Components of the Javascript Best Practices:</p>
+        <ol>
+            <li><a href="javascript:req7_openit1('click1')">Avoid Global Variables</a></li>
+            <li><a href="javascript:req7_openit1('click2')">Always Declare Local Variables</a></li>
+            <li><a href="javascript:req7_openit1('click3')">Declarations on Top</a></li>
+            <li><a href="javascript:req7_openit1('click4')">Initialize Variables</a></li>
+            <li><a href="javascript:req7_openit1('click5')">Never Declare Number, String, or Boolean Objects</a></li>
+            <li><a href="javascript:req7_openit1('click6')">Don't Use new Object()</a></li>
+            <li><a href="javascript:req7_openit1('click7')">Beware of Automatic Type Conversions</a></li>
+            <li><a href="javascript:req7_openit1('click8')">Use === Comparison</a></li>
+            <li><a href="javascript:req7_openit1('click9')">Use Parameter Defaults</a></li>
+            <li><a href="javascript:req7_openit1('click10')">End Your Switches with Defaults</a></li>
+            <li><a href="javascript:req7_openit1('click11')">Avoid Using eval()</a></li>
+
+        </ol>
+    </div>
+    <hr>
+</div>
+<!--end requirement #7-->
+
+
+<!--Requirement 8-->
+<div class="requirement8">
+    <h2>Requirement #8</h2>
+    <div class="topspace">
+
+        Click button to convert a JSON object(array of States and their Capitals),<br/>
+            into JS string.  <button onclick="req8_jsStringFromJSON()">click</button>
+    </div>
+
+    <div id="result8" class="results">
+    </div>
+    <hr>
+</div>
+    <!-- end requirement 8-->
+
+
+<!--requirement 9-->
+<div class="requirement9">
+    <h2>Requirement #9</h2>
+    <div style="text-align: center; padding-top: 50px">
+        <p>Complete Form</p>
+    </div>
+    <div class="topspace">
+        <form name="req9Form" action="#"
+        onsubmit="return req9_validateForm()" method="post">
+        First Name: <input type="text" name="firstname9"> &nbsp;
+        Last Name: <input type="text" name="lastname9">
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="result9" class=" results"></div>
+    <hr>
+</div>
+<!--End requirement 9-->
+
+
+<!--requirement 10-->
+<div class="requirement10">
+    <h2>Requirement #10</h2>
+    <div style="text-align: center; padding-top: 50px">
+        <p>Complete Form using HTML</p>
+    </div>
+    <div class="topspace">
+        <form name="req10Form" action="#" method="post">
+            First Name: <input type="text" name="firstname10" required> &nbsp;
+            Last Name: <input type="text" name="lastname10" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="result10" class=" results"></div>
+    <hr>
+</div>
+<!--End requirement 10-->
+
+
+
+
+<!--requirement 11-->
+<div class="requirement11">
+    <h2>Requirement #11</h2>
+    <div style="text-align: center; padding-top: 50px">
+        <p>Validity properties:</p>
+    </div>
+    <div class="topspace">
+        If number is greater than 50: <input type="number" id="fieldId11" max="50"> &nbsp;
+        <button onclick="req11_Overflow()">OK</button><br/>
+
+        If number is less than 50: <input type="number" id="fieldId11a" min="50"> &nbsp;
+        <button onclick="req11_Underflow()">OK</button><br/>
+
+        If number is not entered: <input type="number" id="fieldId11b" required> &nbsp;
+        <button onclick="req11_Missing()">OK</button><br/>
+
+    </div>
+    <div id="result11" class=" results"></div>
+    <hr>
+</div>
+<!--End requirement 11-->
+
+
+
+
+<!--requirement 12-->
+<div class="requirement12">
+    <h2>Requirement #12</h2>
+    <div style="text-align: center; padding-top: 50px">
+        <p>Create 3 (three) Objects:</p>
+    </div>
+    <div class="topspace">
+        <p>My media collection contains: <span id="album12">Black Star</span> by
+            <span id="fname12">David</span> <span id="lname12">Bowie</span> released in <span id="year12" >2016</span>.</p>
+        Object literal:<button onclick="req12_objLiteral()">OK</button><br/>
+
+
+        <p>My media collection also contains: <span id="album12a">Lux</span> by
+            <span id="fname12a">Brian</span> <span id="lname12a">Eno</span> released in <span id="year12a" >2012</span>.</p>
+        Keyword new:<button onclick="req12_keywordNew()">OK</button><br/>
+
+
+        <p>My media collection also contains: <span id="album12b">How To Destroy Angels</span> by
+            <span id="fname12b">Trent</span> <span id="lname12b">Reznor</span> released in <span id="year12b" >2010</span>.</p>
+        Object constructor:<button onclick="req12_makeInstance()">OK</button><br/>
+
+        <p style="padding-top: 50px">Click to see all objects in the array:<button onclick="req12_displayArray()">Display</button></p>
+        <p id="result120" class="results"></p>
+        <p id="result121" class="results"></p>
+        <p id="result122" class="results"></p>
+    </div>
+    <hr>
+</div>
+<!--End requirement 12-->
+
+
+<!--requirement 13-->
+<div class="requirement13">
+    <h2>Requirement #13</h2>
+    <div style="text-align: center; padding-top: 50px">
+
+    </div>
+    <div class="topspace">
+        <p>Add the following property to object: <span id="addProp13k" style="font-weight: bold">Billboard Peak</span>: <span id="addProp13v" style="font-weight: bold">1</span>
+        <button onclick="req13_addProp()">OK</button> </p>
+        <p>Remove property to object: <button onclick="req13_deleteProp()">OK</button> </p>
+
+        </div>
+    <hr>
+    </div>
+<!-- end requirement 13-->
+
+
+<!--requirement 14-->
+<div class="requirement14">
+    <h2>Requirement #14</h2>
+    <div style="text-align: center; padding-top: 50px">
+
+    </div>
+    <div class="topspace">
+                <p>Please select to increase or decrease speed:
+            <input type="text" id="speedAmount">MPH<br/>
+            <input type="checkbox" id="addone">Increase <span style="padding-left: 20px"></span>
+            <input type="checkbox" id="subone">Decrease <span style="padding-left: 20px">
+            <button onclick="req14_speedChange()">Change</button>
+        </span></p>
+
+        </div>
+    <div id="result14" class="results"></div>
+    <hr>
+    </div>
+<!--end requirement 14-->
+
+<!--requirement 15-->
+<div class="requirement15">
+    <h2>Requirement #15</h2>
+    <div style="text-align: center; padding-top: 50px">
+
+    </div>
+    <div class="topspace">
+        <p>Click to add new range property:
+            <button onclick="req15_addPrototype()">Add </button>
+        </p></div>
+    <div id="result15" class="results"></div>
+    <hr>
+    </div>
+<script>
+
+</script>
+
+            <a href="../index.html">return main page</a>
+</body>
+
+</html>

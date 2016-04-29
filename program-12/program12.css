@@ -1,0 +1,91 @@
+h1{
+    text-align: center;
+
+}
+h2 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.req4{
+    font-family: "URW Gothic L";
+    color: darkorange;
+    font-size: larger;
+}
+
+button.accordion {
+    background-color: #777777;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 20px;
+    color: darkorange;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+#req5div1{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 2s ease-in-out;
+}
+
+#req5div1:hover{
+    width: 500px;
+}
+
+#req5div2{
+    width: 200px;
+    height: 100px;
+    background: lightblue;
+    transition: 3s ease-in-out;
+}
+
+#req5div2:hover{
+    width: 800px;
+}
+
+#req5div3{
+    width: 300px;
+    height: 100px;
+    background: lightseagreen;
+    transition: 5s ease-in-out;
+}
+
+#req5div3:hover{
+    width: 1100px;
+}
+

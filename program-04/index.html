@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thompson:Program 4</title>
+    <link href="program4.css" rel="stylesheet">
+
+
+</head>
+<body onload="req1_x('dateDisplay'); req3_cookieCheck()">
+<h1 style="text-align: center; padding-bottom: 100px">Welcome to Program 4</h1>
+
+
+<!--requirement 1-->
+<div class="requirement1">
+
+        <h2>Requirement #1</h2>
+
+    <h2 id = "dateDisplay"></h2>
+
+    <script type="text/javascript" src="program4.js"></script>
+    <script>
+            (function () {
+            document.getElementById("dateDisplay").style.color = "blue";
+        })();
+
+    </script>
+    <hr>
+</div>
+<!--End requirement 1-->
+
+
+<!--requirement 2-->
+<div class="requirement2">
+    <h2>Requirement #2</h2>
+
+    <div class="topspace">
+        Please select a color to change the date above:
+        <select id = selectColor onchange="req2_colorChange(this)">
+
+            <option value="Blue" selected>Blue</option>
+            <option value="Green">Green</option>
+            <option value="Pink">Violet</option>
+            <option value="Red">Red</option>
+
+        </select>
+    </div>
+    <hr>
+</div>
+<!--End requirement 2-->
+
+
+<!--requirement 3-->
+<div class="requirement3">
+    <h2>Requirement #3</h2>
+    <div class="topspace">
+        <p id="result3" class="results"></p>
+    </div>
+    <hr>
+</div>
+<!--End requirement 3-->
+
+
+<!--Requirement 4-->
+<div class="requirement4">
+    <h2>Requirement #4</h2>
+    <div class="topspace">
+        <p>Click button to display a count and a random number between 1-100.<br/>
+            This may be clicked numerous times.<button onclick="req4_closure()">Click</button> </p>
+        <p id="result4" class="results"></p>
+    </div>
+    <hr>
+</div>
+<!-- end requirement #4-->
+
+
+<!--requirement #5-->
+<div class="requirement5">
+    <h2>Requirement #5</h2>
+    <p>Using the toggle functionality, click over the paragraphs<br/>
+        to watch them appear/disappear
+    by iterating through them.</p>
+    <div class="topspace" id="ptags">
+
+
+        <p class="petIpsum" onclick="req5_toggle(this)">Puppy kitty ipsum dolor sit good dog speak litter fluffy toys pet aquarium pet supplies. Play Dead play teeth food lick play dead birds wagging purr birds bed feathers
+            scratcher house train dog lick. Left Paw Mittens tail twine litter box stay chirp stay Mittens barky slobber licks run water tooth parakeet gimme five harness.
+            Nap crate throw heel toy play throw kisses play dead gimme five Mittens bird paws lick collar. Crate fleas pet left paw Snowball walk chow slobber harness lol
+            catz drool dog house Mittens kitten Mittens lick swimming ID tag foot dog. Kitten roll over bird food grooming fish walk string feeder wagging cockatiel toy harness groom leash shake play
+            window treats. Pet Supplies cockatiel dog heel litter box stick tuxedo pet groom behavior play nap cat harness chirp field fluffy slobbery.
+        </p>
+
+        <p class="petIpsum" onclick="req5_toggle(this)">Spread kitty litter all over house under the bed, so white cat sleeps on a black shirt under the bed destroy couch, and tuxedo cats always looking dapper so
+            intently stare at the same spot. Sleep nap use lap as chair, for human is washing you why halp oh the horror flee scratch hiss bite. When in doubt, wash flop over. Stare at the wall,
+            play with food and get confused by dust kitty power! . Eat a plant, kill a hand plan steps for world domination so ears back wide eyed. Eat grass, throw it back up sleep in the
+            bathroom sink climb leg walk on car leaving trail of paw prints on hood and windshield yet hunt by meowing loudly at 5am next to human slave food dispenser shove bum in owner's face
+            like camera lens play riveting piece on synthesizer keyboard. Attack the dog then pretend like nothing happened. Stretch jump off balcony, onto stranger's head. Destroy couch gnaw the
+            corn cob but howl uncontrollably for no reason but chew foot claw drapes poop in litter box, scratch the walls. Swat turds around the house eat a plant, kill a hand destroy the blinds,
+            or why must they do that, for destroy couch meow all night having their mate disturbing sleeping humans sweet beast.
+        </p>
+
+        <p class="petIpsum" onclick="req5_toggle(this)">Wag Tail speak pet supplies Tigger lick lazy dog groom chew vitamins heel. Fish park dragging crate running small animals pet gate fish tabby bird right paw walk field.Teeth fish wet nose
+            brush barky foot treats wagging feeder tooth chew kitty dog house lazy dog vaccination window scratcher. Critters park mouse chow bedding litter box wagging play dead commands. Furry
+            brush throw window sit treats water. Tongue licks smooshy chow kitty twine catch nap toy tooth play foot aquatic chirp feathers stay. Bird walk water dog fleas drool Snowball pet supplies.
+        </p>
+
+        <p class="petIpsum" onclick="req5_toggle(this)">Meow human give me attention meow and cat is love, cat is life attack feet, for
+            intently sniff hand. Stare at ceiling light hunt by meowing loudly at 5am next to human slave food dispenser.
+            Asdflkjaertvlkjasntvkjn (sits on keyboard). Eat from dog's food flop over. Attack the dog then pretend like nothing
+            happened. Stand in front of the computer screen love to play with owner's hair tie. Claws in your leg intrigued
+            by the shower roll on the floor purring your whiskers off for under the bed, or howl uncontrollably for no reason.
+            Chase mice knock dish off table head butt cant eat out of my own dish for i like big cats and i can not lie so stand in front of the computer screen,
+            or sleep on keyboard purr for no reason yet meowzer!. Sit in box. Behind the couch flee in terror at cucumber discovered on floor yet mew or walk on car leaving
+            trail of paw prints on hood and windshield.
+        </p>
+
+        <p class="petIpsum" onclick="req5_toggle(this)">Bird walk water dog fleas drool Snowball pet supplies. Feathers speak fetch stay carrier bird. Tongue food paws aquatic bark
+            string Fido mouse. Crate critters good boy play dead head maine coon cat Spike running canary chow bedding toys fish string tabby food Tigger Spike
+            left paw water dog. Aquatic treats parrot kitten Snowball field cockatiel toy Rover maine coon cat lol catz licks bird seed dog house fur.
+        </p>
+
+    </div>
+    <hr>
+</div>
+<!-- end requirement #5-->
+
+
+<!--requirement #6-->
+<div class="requirement6">
+    <h2>Requirement #6</h2>
+
+    <div class="topspace">
+        <p>Click button to change the font size and font family of the paragraphs above
+            <button onclick="req6_changeFont()">Change</button>
+        </p>
+    </div>
+    <hr>
+</div>
+<!-- end requirement #6-->
+
+
+
+<!--requirement #7-->
+<div class="requirement7">
+    <h2>Requirement #7</h2>
+    </div>
+
+    <div class="topspace"></div>
+        <p>Click button see all of the inner.HTML values of all the elements on the page.<br/>
+            This will return a very long window and may adversely affect the functionality requirements that follow. <br/>
+            PLEASE REFRESH PAGE AFTER COMPLETING THIS.
+
+            <button onclick="req7_showMeItAll()">View</button>
+        </p>
+    <div id="result7" class="results"><p id="wtf"></p></div>
+
+    <hr>
+
+<!-- end requirement #7-->
+
+
+
+<!--requirement #8-->
+<div class="requirement8">
+    <h2>Requirement #8</h2>
+
+
+        <table>
+            <tr id='firstrow'>
+                <td id="angry_cat_ur_mama">Angry Cat</td>
+                <td id="odd_die">Odd Die</td>
+                <td id="pic_bulboff">Off Lightbulb</td>
+            </tr>
+            <tr>
+                <td id="pic_bulbon">On Lightbulb</td>
+                <td id="even_die">Even Die</td>
+                <td id="Shiraz">Shiraz</td>
+            </tr>
+
+        </table>
+
+
+        <p>Select an image name
+            <select id="req8image" onchange="req8_tableFill(this)"> <!--my object-->
+                <option value="angry_cat_ur_mama" class="req8">Angry Cat</option>
+                <option value="odd_die" class="req8">Odd Die</option>
+                <option value="pic_bulboff" class="req8">Off Lightbulb</option>
+                <option value="pic_bulbon" class="req8">On Lightbulb</option>
+                <option value="even_die" class="req8">Even Die</option>
+                <option value="Shiraz" class="req8">Shiraz</option>
+            </select>
+        </p>
+    <div id="result8" class="results"></div>
+    <hr>
+</div>
+<!-- end requirement #8-->
+
+
+
+<!-- requirement #9 -->
+<div class="requirement9">
+    <h2>Requirement #9</h2>
+
+    <div class="topspace">
+        <p>Click button cycle through five images which will switch change automatically every 5 seconds.
+            <button onclick="startWebWorker()">Start worker</button>
+                   </p>
+        <div id="oTags">
+            <output id="result9a" class="req9ClassOutput"></output>
+        </div>
+    </div>
+    <hr>
+</div>
+<!-- end requirement #9-->
+
+
+
+<!--requirement 10-->
+<div class="requirement10">
+    <h2>Requirement #10</h2>
+</div>
+<div class="topspace"></div>
+Click button to toggle the visibility of the image above.
+<button onclick="req10_visibility()" id="prettyButton" class="button2">visibility</button>
+<div id="result10" class="results"></div>
+<hr>
+<!--end requirement 10-->
+
+
+<!--requirement 11-->
+<div class="requirement11">
+    <h2>Requirement #11</h2>
+</div>
+<div class="topspace"></div>
+<p>An event listener was added to the mouseover on the button from the previous requirement.</p>
+<script>
+    var req11_butX =document.getElementById('prettyButton');
+    req11_butX.addEventListener("mouseover", req11_buttonChange);
+    req11_butX.addEventListener("mouseout", req11_buttonBack);
+
+    function req11_buttonChange(){
+        req11_butX.className ='button1';
+        }
+    function req11_buttonBack(){
+        req11_butX.className = 'button2';
+        }
+</script>
+<hr>
+<!--end requirement 11-->
+
+
+<!-- requirement 12-->
+
+<div class="requirement12">
+    <h2>Requirement #12</h2>
+</div>
+<div class="topspace"></div>
+<p>
+   Please click the following link to <a href="requirement-11.html">Requirement 12</a> page.
+</p>
+<hr>
+<!--end requirement #12-->
+
+
+
+<!-- requirement 13-->
+
+<div class="requirement13">
+<h2>Requirement #13</h2>
+</div>
+<div class="topspace"></div>
+<div id="req13Div">
+    Please click the button to create a paragraph <button onclick="req13_pCreate()">Create</button>
+</div>
+<hr>
+<!--end requirement #13-->
+
+
+<!--requirement #14-->
+<div class="requirement14">
+    <h2>Requirement #14</h2>
+</div>
+<div class="topspace"></div>
+<div id="req14Div" onmouseover="req14_totalP()" style="text-align: center">
+    Please 'mouseover' this 'div' and <br>
+    below will display the number<br>
+    of paragraphs on this page.<br>
+    <br>
+    <br>
+</div>
+<div id="result14" class="results"></div>
+<hr>
+<!--end requirement #14-->
+
+<p>
+    <a href="../index.html">return main page</a></p>
+</body>
+
+</html>

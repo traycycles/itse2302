@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Program 1: Tracy Thompson</title>
+    <link href="program1.css" rel="stylesheet">
+
+    <script type="text/javascript" src="program1.js">
+</script>
+</head>
+
+<body>
+<h1 style="text-align: center;">Welcome to Program-01</h1>
+
+<!-- REQUIREMENT #1-->
+<div class="requirement1">
+    <h2>Requirement #1</h2>
+    <p>Please click lightbulb image to turn on/off and view date/time</p>
+<p>
+    <img id="Lightbulb" onclick="lightbulbOnOff_require1(); displayDate_require1();"
+         src="images/pic_bulboff.gif" /><br></p>
+    <p id="belowBulb"></p>
+<hr>
+</div>
+<!--end requirement #1 -->
+
+
+
+<!-- REQUIREMENT #2-->
+<div class="requirement2">
+    <h2>Requirement #2</h2>
+    <p>
+Please select an image size for the lightbulb above:</p>
+    <form>
+        <input type="radio" name="imageSelect"  value="Small" onchange="changeSize_require2('smallSize')">Small
+        <input type="radio" name="imageSelect"  value="Medium" onchange="changeSize_require2('')">Medium
+        <input type="radio" name="imageSelect"  value="Large" onchange="changeSize_require2('largeSize')">Large
+    </form>
+<hr>
+</div>
+<!--end requirement #2 -->
+
+
+
+<!-- REQUIREMENT #3-->
+<div class="requirement3" >
+    <h2>Requirement #3</h2>
+    <p>Click button to clear the page</p>
+    <button onclick="clearPage_require3()">Clear Page</button>
+<hr>
+</div><!--end requirement #3 -->
+
+
+
+<!-- REQUIREMENT #4-->
+<div class="requirement4">
+    <h2>Requirement #4</h2>
+    <p id="req4">Kitty ipsum dolor sit amet, nibh toss the mousie enim ut aliquam nullam vehicula, justo kittens
+        egestas dolor biting. Sleep in the sink attack eat the grass rhoncus eat, pellentesque vulputate
+        fluffy fur quis neque. Amet faucibus justo leap, cras nec suscipit libero toss the mousie etiam
+        suscipit lay down in your way. Purr faucibus jump quis, quis nunc bibendum sleep on your keyboard
+        sleep on your face sleep in the sink meow. Ac pharetra tail flick consectetur jump hairball, nam
+        mauris a sniff etiam. Toss the mousie meow jump on the table in viverra meow, litter box tristique
+        scratched enim vel biting purr. Eat neque enim nam shed everywhere faucibus, sollicitudin suscipit
+        neque jump on the table tincidunt a.</p>
+    <p style="text-align: center">
+        Click Button to change the appearance of the text above &nbsp;<button onclick="changeText_require4()";>Change Text</button><br>
+        </p>
+    <hr>
+</div><!--end requirement #4 -->
+
+
+
+<!-- REQUIREMENT #5-->
+<div class="requirement5">
+    <h2>Requirement #5</h2>
+    <p style="padding-top: 50px">
+        Please click to get the lattitude and longitude of your location:
+
+    <button onclick="getLocation_require5()">Where am I?</button></p>
+    <p id="location"></p>
+    <hr>
+</div><!--end requirement #5 -->
+
+
+
+<!-- REQUIREMENT #6-->
+<div class="requirement6">
+    <h2>Requirement #6</h2>
+        <p>Please enter two numbers:</p>
+    <form>
+         First Number: <input type="text" style="width: 50px" name="number1" id="firstnumber" /> &nbsp;
+        Second Number: <input type="text" style="width: 50px" name="number1" id="secondnumber" /> &nbsp;
+        <input type="button" value="Submit" onclick="require6()">
+    </form><br><br>
+        <label id ="labeladd"></label> <br>
+        <label id="labelsub" ></label><br>
+        <label id ="labelmult"></label><br>
+        <label id ="labeldiv"></label></p>
+    <hr>
+    </div><!--end requirement #6 -->
+
+
+
+<!-- REQUIREMENT #7-->
+<div class="requirement7">
+    <h2>Requirement #7</h2>
+    <p>Let's "add" a couple of numbers that are strings!</p>
+    First Number: <input type="text" style="width: 50px" id="num1" /> &nbsp;
+    Second Number: <input type="text" style="width: 50px" id="num2"  /> &nbsp;
+    <input type="button" value="Submit" onclick="require7()">
+    <p id="stradd"></p>
+    <hr>
+</div><!--end requirement #7 -->
+
+
+
+<!-- REQUIREMENT #8-->
+<div class="requirement8">
+    <h2>Requirement #8</h2>
+    <p>
+        Enter a number. <br>
+        An even numbered die will appear if even.<br>
+        Odd numbered if the number entered is odd: <input type="text" style="width: 50px" id="n1" /> &nbsp;
+        <input type="button" value="Submit" onclick="require8()"></p>
+        <p><img id="rollem" >
+    </p>
+
+    <hr>
+</div><!--end requirement #8 -->
+
+
+
+<!-- REQUIREMENT #9-->
+<div class="requirement9">
+    <h2>Requirement #9</h2>
+    <p>
+        Please enter a number: <input type="text" style="width: 50px" id="numb" /> &nbsp;
+        <input type="button" value="Submit" onclick="require9()"><br><br>
+        Please select to add or subtract:&nbsp;
+        + 1<input type="checkbox" id="addone"> &nbsp;
+        - 1<input type="checkbox" id="subone">
+    </p>
+    <p id="funnum" >
+    </p>
+
+    <hr>
+</div><!--end requirement #9 -->
+
+
+
+<!-- REQUIREMENT #10-->
+<div class="requirement10">
+    <h2>Requirement #10</h2>
+    <p> Select a Name from the menu and submit.<br>
+        The name selected will appear.<br>
+        The color will change accordingly.<br><br>
+        <select id="nameselect">
+            <option value="Name 1">Name 1</option>
+            <option value="Name 2">Name 2</option>
+            <option value="Name 3">Name 3</option>
+            <option value="Name 4">Name 4</option>
+            </select>&nbsp;
+        <input type="button" value="submit" onclick="require10()">
+    </p>
+    <h1 id="mynames" >
+    </h1>
+
+    <hr>
+</div><!--end requirement #10 -->
+
+
+
+<!-- REQUIREMENT #11-->
+<div class="requirement11">
+    <h2>Requirement #11</h2>
+    <p>
+        Drag angry cat photo into the box:
+        </p>
+    <div id="angrydiv" ondrop="drop_require11(event)" ondragover="allowDrop_require11(event)"></div>
+    <br>
+    <img id="drag11" src="images/angry_cat_ur_mama.jpg" draggable="true" ondragstart="drag_require11(event)" width="300" height="100">
+
+    <hr>
+</div><!--end requirement #11 -->
+
+
+
+<!-- REQUIREMENT #12-->
+<div class="requirement12">
+    <h2>Requirement #12</h2>
+    <div>
+        Roll your mouse over the section below, and watch it change. <br>
+        Don't worry, you'll get it back when you roll your mouse out of it.<br><br>
+    </div>
+    <div id="lastdamnrequirement" onmouseover="colorChange(this)" onmouseout="backToNormal(this)" style="width: 100%; height: 300px"></div>
+
+    <hr>
+</div><!--end requirement #12 -->
+
+
+<p>
+    <a href="../index.html">return main page</a></p>
+
+
+</body>
+
+</html>

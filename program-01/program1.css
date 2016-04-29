@@ -1,0 +1,42 @@
+h2 {
+    text-align: center;
+}
+.requirement1{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.requirement2{
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.requirement3{
+    padding-top: 100px;
+    text-align: center;
+}
+.requirement4, .requirement5, .requirement6, .requirement7, .requirement8,
+.requirement9, .requirement10, .requirement12{
+    padding-top: 100px;
+}
+
+.smallSize {
+    height: 65px;
+    width: 50px;
+}
+
+.largeSize{
+    height: 300px;
+    width: 225px;
+}
+#angrydiv{
+    width:300px;
+    height:100px;
+    border:1px solid #000000;
+}
+.
+/*#largeSize{*/
+    /*height: 150%;*/
+    /*width: 150%;*/
+/*}*/

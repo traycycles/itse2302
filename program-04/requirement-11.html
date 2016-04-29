@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thompson: requirement-12</title>
+</head>
+<body>
+Please resize window.
+Please click link to return to <a href="index.html">previous</a> page.
+<script>
+    window.addEventListener('resize', colorChange);
+function colorChange(){
+    document.body.style.backgroundColor = "#"+Math.floor(Math.random()*16777215).toString(16);
+    }
+
+</script>
+
+</body>
+</html>

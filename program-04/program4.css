@@ -1,0 +1,54 @@
+h2 {
+    text-align: center;
+}
+
+.requirement1,.requirement2, .requirement3, .requirement4,
+.requirement5, .requirement6, .requirement7, .requirement8,
+.requirement9, .requirement10, .requirement11, .requirement12,
+.requirement13,.requirement14, .requirement15 {
+
+    padding-top: 100px;
+}
+.topspace{
+    padding-top: 50px;
+    display: inline-block;
+}
+.results{
+    padding-top: 20px;
+    color: darkred;
+}
+
+.petIpsum{
+    visibility: visible;
+    cursor: pointer;
+}
+.petIpsumOff{
+    color: #ffffff;
+    display: block;
+    cursor: pointer;
+}
+table{
+    width:800px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+}
+.req9ClassOutput{
+    display:inline;
+}
+.req9ClassOutputAlt{
+    display:none;
+}
+.button1 {
+    color: #ffffff;
+    background-color: red;
+}
+.button2{
+    color:default;
+    background-color: default;
+}

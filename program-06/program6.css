@@ -1,0 +1,26 @@
+#planetDisplay {
+
+    padding: 0;
+    text-decoration: none;
+    text-align: justify;
+}
+#planetDisplay li{
+    text-decoration: none;
+    display: inline-block;
+    }
+#planetDisplay::after{
+    content:'';
+    width: 100%;
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+
+}
+
+h2 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
